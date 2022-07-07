@@ -5,28 +5,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Constructive HTML Template</title>
-<!--
+	<title>Commission Concept 2022/07/07</title>
 
-Template 2102 Constructive
-
-http://www.tooplate.com/view/2102-constructive
-
--->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
 	<link rel="stylesheet" href="css/fontawesome-all.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-	<link rel="stylesheet" href="css/tooplate-style.css">
+	<link rel="stylesheet" href="delainomeyer.css">
 
 	<script>
 		var renderPage = true;
 
 	if(navigator.userAgent.indexOf('MSIE')!==-1
 		|| navigator.appVersion.indexOf('Trident/') > 0){
-   		/* Microsoft Internet Explorer detected in. */
    		alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
    		renderPage = false;
 	}
@@ -34,18 +27,15 @@ http://www.tooplate.com/view/2102-constructive
 </head>
 
 <body>
-	<!-- Loader -->
 	<div id="loader-wrapper">
 		<div id="loader"></div>
 		<div class="loader-section section-left"></div>
 		<div class="loader-section section-right"></div>
 	</div>
 	
-	<!-- Page Content -->
 	<div class="container-fluid tm-main">
 		<div class="row tm-main-row">
 
-			<!-- Sidebar -->
 			<div id="tmSideBar" class="col-xl-3 col-lg-4 col-md-12 col-sm-12 sidebar">
 
 				<button id="tmMainNavToggle" class="menu-icon">&#9776;</button>
@@ -90,11 +80,9 @@ http://www.tooplate.com/view/2102-constructive
 							<header class="mb-4"><h1 class="tm-text-shadow">Constructive Design</h1></header>
 							<p class="mb-5 tm-font-big">Aenean fermentum vestibulum ipsum, ut pretium erat sodales sodales. Pellentesque quis orci vitae dui commodo sodales et ut quam. Etiam vitae egestas purus, ut malesuada enim.</p>
 							<a href="#" class="btn tm-btn tm-font-big" data-nav-link="#tmNavLink2">Continue...</a> 
-							<!-- data-nav-link holds the ID of nav item, which means this link should behave the same as that nav item  -->
 						</div>
 					</section>
 
-					<!-- section 2 -->
 					<section id="tm-section-2" class="tm-section tm-section-carousel">
 						<div>
 							<header class="mb-4"><h2 class="tm-text-shadow">Our Products</h2></header>		            
@@ -111,7 +99,6 @@ http://www.tooplate.com/view/2102-constructive
 						</div>       		          	
 					</section>
 
-					<!-- section 3 -->
 					<section id="tm-section-3" class="tm-section">						
 						<div class="row mb-4">
 							<header class="col-xl-12"><h2 class="tm-text-shadow">Our Company</h2></header>		
@@ -156,7 +143,6 @@ http://www.tooplate.com/view/2102-constructive
 						</div>						               
 					</section>
 
-					<!-- section 4 -->
 					<section id="tm-section-4" class="tm-section">
 						<div class="tm-bg-transparent-black tm-contact-box-pad">
 							<div class="row mb-4">
@@ -195,13 +181,13 @@ http://www.tooplate.com/view/2102-constructive
 							</div>
 						</div>
 					</section>					
-				</div>	<!-- .tm-content -->							
+				</div>
 				<footer class="footer-link">
-					<p class="tm-copyright-text">Copyright &copy; 2018 Constructive Co. Ltd. 
+					<p class="tm-copyright-text">Copyright &copy; 2022 Delaino Meyer
                     
-                    - Design: Tooplate</p>
+                    - Developer: Delaino Meyer</p>
 				</footer>
-			</div>	<!-- row -->			
+			</div>			
 		</div>
 		<div id="preload-01"></div>
 		<div id="preload-02"></div>
@@ -211,20 +197,18 @@ http://www.tooplate.com/view/2102-constructive
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
-		<script type="text/javascript" src="slick/slick.min.js"></script> <!-- Slick Carousel -->
+		<script type="text/javascript" src="slick/slick.min.js"></script>
 
 		<script>
 
 		var sidebarVisible = false;
 		var currentPageID = "#tm-section-1";
 
-		// Setup Carousel
 		function setupCarousel() {
 
-			// If current page isn't Carousel page, don't do anything.
 			if($('#tm-section-2').css('display') == "none") {
 			}
-			else {	// If current page is Carousel page, set up the Carousel.
+			else {	
 
 				var slider = $('.tm-img-slider');
 				var windowWidth = $(window).width();
@@ -259,19 +243,18 @@ http://www.tooplate.com/view/2102-constructive
 	              	});
 				}
 
-				// Init Magnific Popup
+
 				$('.tm-img-slider').magnificPopup({
-				  delegate: 'a', // child items selector, by clicking on it popup will open
+				  delegate: 'a',
 				  type: 'image',
 				  gallery: {enabled:true}
-				  // other options
 				});
       		}
   		}
 
-  		// Setup Nav
+
   		function setupNav() {
-  			// Add Event Listener to each Nav item
+
 	     	$(".tm-main-nav a").click(function(e){
 	     		e.preventDefault();
 		    	
@@ -281,28 +264,28 @@ http://www.tooplate.com/view/2102-constructive
 		    	setupCarousel();
 		    	setupFooter();
 
-		    	// Hide the nav on mobile
+
 		    	$("#tmSideBar").removeClass("show");
 		    });	    
   		}
 
   		function changePage(currentNavItem) {
-  			// Update Nav items
+
   			$(".tm-main-nav a").removeClass("active");
      		currentNavItem.addClass("active");
 
 	    	$(currentPageID).hide();
 
-	    	// Show current page
+
 	    	currentPageID = currentNavItem.data("page");
 	    	$(currentPageID).fadeIn(1000);
 
-	    	// Change background image
+
 	    	var bgImg = currentNavItem.data("bgImg");
 	    	$.backstretch("img/" + bgImg);		    	
   		}
 
-  		// Setup Nav Toggle Button
+
   		function setupNavToggle() {
 
 			$("#tmMainNavToggle").on("click", function(){
@@ -310,8 +293,7 @@ http://www.tooplate.com/view/2102-constructive
 			});
   		}
 
-  		// If there is enough room, stick the footer at the bottom of page content.
-  		// If not, place it after the page content
+
   		function setupFooter() {
   			
   			var padding = 100;
@@ -333,20 +315,13 @@ http://www.tooplate.com/view/2102-constructive
   			}  			
   		}
 
-  		// Everything is loaded including images.
       	$(window).on("load", function(){
 
-      		// Render the page on modern browser only.
       		if(renderPage) {
-				// Remove loader
 		      	$('body').addClass('loaded');
 
-		      	// Page transition
 		      	var allPages = $(".tm-section");
 
-		      	// Handle click of "Continue", which changes to next page
-		      	// The link contains data-nav-link attribute, which holds the nav item ID
-		      	// Nav item ID is then used to access and trigger click on the corresponding nav item
 		      	var linkToAnotherPage = $("a.tm-btn[data-nav-link]");
 			    
 			    if(linkToAnotherPage != null) {
@@ -357,23 +332,19 @@ http://www.tooplate.com/view/2102-constructive
 			    	});
 			    }
 		      	
-		      	// Hide all pages
 		      	allPages.hide();
 
 		      	$("#tm-section-1").fadeIn();
 
-		     	// Set up background first page
 		     	var bgImg = $("#tmNavLink1").data("bgImg");
 		     	
 		     	$.backstretch("img/" + bgImg, {fade: 500});
 
-		     	// Setup Carousel, Nav, and Nav Toggle
 			    setupCarousel();
 			    setupNav();
 			    setupNavToggle();
 			    setupFooter();
 
-			    // Resize Carousel upon window resize
 			    $(window).resize(function() {
 			    	setupCarousel();
 			    	setupFooter();
